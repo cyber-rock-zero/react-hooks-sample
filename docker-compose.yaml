@@ -3,7 +3,6 @@ version: "3"
 services:
   app:
     image: node:lts
-    container_name: react-hooks-sample
     tty: true
     volumes:
       - type: bind
@@ -14,6 +13,6 @@ services:
         target: /src/sample-app/node_modules
     working_dir: "/src"
     ports:
-      - 3000:3000
+      - 3010:3000
 volumes:
   node_modules:
